@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shuzita Tech</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script> 
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#company-overview">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="box" id="company-overview">
+        <img src="https://www.theforage.com/blog/wp-content/uploads/2022/09/tech-companies.jpg" alt="Shuzita Tech Logo" class="logo">
+        <h2>Shuzita Tech</h2>
+        <p>Empowering the Future of Technology</p>
+        <p>Shuzita Tech is at the forefront of innovation, delivering groundbreaking solutions in software development, artificial intelligence, and cloud technologies that empower businesses to thrive in a digital future.</p>
+        <button onclick="discoverMore()">Discover More</button>
+    </div>
+
+    <div class="box" id="about">
+        <h2>About Us</h2>
+        <img src="https://i.pinimg.com/564x/4d/8e/78/4d8e78aca7102d12b9d5a28a2544d9a2.jpg" alt="Team Image" class="about-image"> <!-- Replace with a valid image URL -->
+        <p>At Shuzita Tech, we are dedicated to delivering innovative technology solutions that drive success. Our team of experts is passionate about leveraging technology to solve complex challenges and create lasting value.</p>
+
+        <h3>Latest News</h3>
+        <ul>
+            <li><strong>New AI Initiative Launched:</strong> We are excited to announce the launch of our new AI initiative aimed at providing advanced machine learning solutions to businesses.</li>
+            <li><strong>Cloud Solutions Upgrade:</strong> Our cloud services have received a major upgrade, offering enhanced security features and scalability for our clients.</li>
+            <li><strong>Partnership with Local University:</strong> Shuzita Tech has partnered with a local university to offer internship opportunities for students in the field of technology.</li>
+        </ul>
+    </div>
+    <div class="box" id="services">
+        <h2>Our Expertise</h2>
+    
+        <div class="service" id="ai-service">
+            <img src="https://i.pinimg.com/474x/32/b7/82/32b78262f03141c0e3c77d9182b846d3.jpg" alt="AI & Machine Learning" class="circular-img">
+            <h3>AI & Machine Learning</h3>
+            <p>Advanced AI-driven insights to propel your business into the future.</p>
+        </div>
+        
+        <div class="service" id="cloud-service">
+            <img src="https://i.pinimg.com/564x/83/a5/d4/83a5d4d329ace4b153356a1f59ad38ad.jpg" alt="Cloud Solutions" class="circular-img">
+            <h3>Cloud Solutions</h3>
+            <p>Flexible, scalable cloud solutions to keep your business agile.</p>
+        </div>
+        <div class="service">
+            <img src="https://i.pinimg.com/474x/53/aa/be/53aabed3deb5605348e95c279d05e7b9.jpg" alt="Custom Software" class="circular-img">
+            <h3>Custom Software</h3>
+            <p>Transforming ideas into innovative software solutions designed for growth.</p>
+        </div>
+    
+        <div class="team-member">
+            <img src="https://i.pinimg.com/564x/47/3a/60/473a6010e8748a6df8da4afbf5d12c32.jpg" alt="Kuswar Shuzita" class="circular-img">
+            <p>Kuswar Shuzita - Head of AI</p>
+        </div>
+    </div>
+
+    <div class="box" id="contact">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Reach out with any questions or to learn more about how we can support your technology needs.</p>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <p>Email: <a href="mailto:contact@shuzitatech.com">contact@shuzitatech.com</a></p>
+        
+        <div class="social-media">
+            <a href="#" target="_blank">LinkedIn</a> |
+            <a href="#" target="_blank">Twitter</a> |
+            <a href="#" target="_blank">Facebook</a>
+        </div>
+    </div>
+
+    <script>
+        function discoverMore() {
+            const aiSection = document.getElementById('ai-service');
+            const cloudSection = document.getElementById('cloud-service');
+
+            aiSection.scrollIntoView({ behavior: 'smooth' });
+            setTimeout(() => {
+                cloudSection.scrollIntoView({ behavior: 'smooth' });
+            }, 1000);
+        }
+    </script>
+</body>
+</html>

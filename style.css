@@ -1,0 +1,224 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #00aaff, #ff6f91);
+    flex-wrap: wrap;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; 
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold; 
+}
+
+.box {
+    background-color: #ffffff; 
+    border-radius: 10px; 
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+
+h2 {
+    color: #333; 
+}
+
+.service, .team-member {
+    margin: 15px 0;
+}
+
+.circular-img {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+}
+
+.box {
+    width: 45%;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+
+.box:hover {
+    transform: translateY(-10px);
+}
+
+
+.logo {
+    width: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    display: block;
+}
+
+#company-overview h2, #services h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#company-overview p, #services .service p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+button {
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: #ff6f91;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #00aaff;
+}
+button {
+    background-color: #4CAF50; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block; 
+    font-size: 16px;
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+}
+.about-image {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+    margin-bottom: 20px; 
+
+h3 {
+    margin-top: 20px; 
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+
+.circular-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 15px auto;
+    display: block;
+}
+.service {
+    flex: 1 1 calc(33.33% - 20px);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.service h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 10px;
+}
+
+.service p {
+    color: #777;
+}
+@media (max-width: 768px) {
+    .service {
+        flex: 1 1 calc(50% - 20px); 
+    }
+}
+@media (max-width: 480px) {
+    .service {
+        flex: 1 1 100%; 
+}
+.team-member {
+    text-align: center;
+    margin-top: 25px;
+}
+
+#contact {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#contact h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#contact p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+.social-media a {
+    color: #00aaff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 5px;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #ff6f91;
+}
